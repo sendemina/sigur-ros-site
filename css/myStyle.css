@@ -1,0 +1,74 @@
+body
+{
+  background-color: #22222c;
+}
+h1
+{
+  color: #f0e8e0;
+  margin: 30px;
+}
+h3
+{
+  color: #f0e8e0;
+  width: 1200px;
+  margin: 30px;
+}
+ul
+{
+  color: #f0e8e0;
+  margin: 30px;
+}
+a:link
+{
+  color: #73abc7;
+}
+a:visited
+{
+  color: #ba8cba;
+}
+
+.column {
+  float: left;
+  width: 30%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+#navbar
+{
+  overflow: hidden;
+  background-color: #141319;
+}
+
+#navbar a
+{
+  float: left;
+  display: block;
+  color: #73abc7;
+  text-align: center;
+  padding: 14px;
+  text-decoration: none;
+}
+
+#navbar a:hover
+{
+  color: #401033;
+  background-color: #f0e8e0;
+}
+
+/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + .content {
+  padding-top: 60px;
+}
